@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>ReviewBoard</title>
+</head>
+
+<body>
+    <div class="review_wrap">
+        <div class="review_board">
+            <div class="write_form">
+                <div class="lecture_name_line board_line"> <!-- 과정명_라인 -->
+                    <span class="line_title">
+                        과정명
+                    </span>
+                    <div class="line_contents">
+                        <select name="lec_select_name" id="lec_select" class="app_lec">
+                            <!-- 취득한 과정만 보이게 + 1번 작성한 과정은 안보임 -->
+                            <option value="1인미디어콘텐츠창작자">1인미디어콘텐츠창작자</option>
+                            <option value="로스팅핸드드립마스터">로스팅핸드드립마스터</option>
+                            <option value="장애인식개선교육지도사">장애인식개선교육지도사</option>
+                        </select>
+                    </div>
+                </div> <!-- 과정명_라인 // -->
+                <div class="review_title board_line"> <!-- 제목 라인 -->
+                    <span class="line_title">
+                        제목
+                    </span>
+                    <div class="line_contents">
+                        <input type="text" name="re_title" id="re_title" class="re_title" value=""
+                            placeholder="제목을 입력해주세요." maxlength="35">
+                    </div>
+                </div> <!-- 제목 라인 // -->
+                <div class="write_line board_line">
+                    <span class="review_title line_title">
+                        수강후기
+                    </span>
+                    <textarea name="write_place" id="write_place" class="write_place" value="" placeholder="내용을 입력해주세요."
+                        spellcheck="false"></textarea>
+                </div>
+                <div class="btn_line board_line">
+                    <button class="write_btn">
+                        작 성 완 료
+                    </button>
+                </div>
+            </div>
+            <div class="board_form">
+                <div class="review_log"> <!-- 후기 1개 -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

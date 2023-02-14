@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 's-core_L';
+    src: url("../../font/s-core_L.otf");
+}
+
+@font-face {
+    font-family: 's-core_LB';
+    src: url("../../font/s-core_LB.otf");
+}
+
+.review_wrap {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background: #bcc6ff;
+    padding: 80px 0;
+}
+
+.review_board {
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    background: #fff;
+    padding: 1.5% 0.5%;
+    font-family: 's-core_L';
+}
+
+.write_form {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid #ddd; */
+    margin-bottom: 20px;
+}
+
+input[type='text'],
+textarea {
+    outline: none;
+    resize: none;
+}
+
+.board_line {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding: 5px 5px 10px;
+    /* border-bottom: 1px solid #eee; */
+}
+
+.line_title {
+    width: 7%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    line-height: 35px;
+    font-family: 's-core_LB';
+    text-align: left;
+    font-weight: bold;
+}
+
+.line_contents {
+    width: 90%;
+    height: 100%;
+    float: left;
+}
+
+.app_lec {
+    border-radius: 15px;
+    padding: 5px;
+    float: left;
+    font-family: 's-core_L';
+    outline: none;
+}
+
+.app_lec option {
+    background: #e1daff;
+    color: #444;
+}
+
+.re_title {
+    width: 50%;
+    float: left;
+    margin-top: 5px;
+    height: 25px;
+    font-family: 's-core_L';
+    padding: 3px 10px;
+    border: 1px solid #bbb;
+}
+
+.write_line .review_title {
+    margin-bottom: 10px;
+}
+
+.write_place {
+    width: 100%;
+    height: 15vh;
+    font-family: 's-core_LB';
+    padding: 1%;
+    line-height: 20px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+}
+
+.write_place::-webkit-scrollbar {
+    background: #eee;
+    border-radius: 10px;
+    width: 15px;
+}
+
+.write_place::-webkit-scrollbar-thumb {
+    background: #bcc6ff;
+    border-radius: 15px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+
+.write_btn {
+    padding: 0.5% 3%;
+    border: none;
+    color: #fff;
+    background: #091b81;
+    border-radius: 30px;
+    font-family: 's-core_LB';
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 3pt;
+    cursor: pointer;
+}
