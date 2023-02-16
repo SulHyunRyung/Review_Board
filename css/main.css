@@ -1,11 +1,11 @@
 @font-face {
     font-family: 's-core_L';
-    src: url("../../font/s-core_L.otf");
+    src: url("../font/s-core_L.otf");
 }
 
 @font-face {
     font-family: 's-core_LB';
-    src: url("../../font/s-core_LB.otf");
+    src: url("../font/s-core_LB.otf");
 }
 
 .review_wrap {
@@ -18,7 +18,7 @@
 }
 
 .review_board {
-    width: 80%;
+    width: 60%;
     height: 80%;
     display: inline-block;
     background: #fff;
@@ -126,4 +126,75 @@ textarea {
     text-align: center;
     letter-spacing: 3pt;
     cursor: pointer;
+}
+
+.board_form {
+    width: 80%;
+    display: inline-block;
+    border-top: 2px solid #ddd;
+}
+
+.review_block {
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 30px 0 ;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.U_name {
+    flex: 0 0 15%;
+    color: #222;
+}
+
+.review_contents {
+    flex: 0 0 60%;
+    text-align: left;
+}
+
+.L_name {
+    font-size: 12px;
+    color: #666;
+}
+
+.board_RV_title {
+    width: 55%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.under_arrow {
+    position: relative;
+    float: right;
+    flex: 0 0 20%;
+}
+
+.under_arrow::after {
+    position: absolute;
+    right: 0;
+    top: 20%;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #aaa;
+    border-right: 3px solid #aaa;
+    transform: rotate(135deg);
+    cursor: pointer;
+}
+
+.review_place {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+
+.review_sub {
+    min-height: 10vh;
+    margin: 5% 0;
+    text-align: left;
+    padding: 0 5%;
+    font-size: 14px;
 }
