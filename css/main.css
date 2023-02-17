@@ -24,6 +24,7 @@
     background: #fff;
     padding: 1.5% 0.5%;
     font-family: 's-core_L';
+    transition: 0.5s;
 }
 
 .write_form {
@@ -49,7 +50,7 @@ textarea {
 }
 
 .line_title {
-    width: 7%;
+    width: 100%;
     height: 100%;
     display: inline-block;
     float: left;
@@ -82,7 +83,7 @@ textarea {
     width: 50%;
     float: left;
     margin-top: 5px;
-    height: 25px;
+    height: 30px;
     font-family: 's-core_L';
     padding: 3px 10px;
     border: 1px solid #bbb;
@@ -124,7 +125,7 @@ textarea {
     font-family: 's-core_LB';
     font-size: 24px;
     text-align: center;
-    letter-spacing: 3pt;
+    letter-spacing: 2pt;
     cursor: pointer;
 }
 
@@ -203,4 +204,16 @@ textarea {
     color: #ff4a4a !important;
     font-size: 17px;
     font-family: 's-core_LB'
+}
+
+@media all and (max-width:1023px) {
+    .review_board {
+        width: 95%;
+    }
+    .board_RV_title {
+        width: 100%;
+    }
+    .re_title {
+        width: 100%;
+    }
 }
